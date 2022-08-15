@@ -2,7 +2,7 @@ import { Scene } from "@babylonjs/core";
 
 export type MeshWriterOptions = { [key: string]: any }
 
-export function MeshWriter(scene: Scene, options: MeshWriterOptions ): Writer;
+export function MeshWriter(scene: Scene, options: MeshWriterOptions ): typeof Writer;
 
 export type WriterOptions = { 
     "font-family"?: string;
