@@ -23,6 +23,4 @@ export type WriterOptions = {
     }
 };
 
-export class Writer {
-    constructor( text: string, options: WriterOptions );
-}
+export function Writer( text: string, options: WriterOptions);
