@@ -6,8 +6,8 @@ export function MeshWriter(scene: Scene, options: MeshWriterOptions ): typeof Wr
 
 export type WriterOptions = { 
     "font-family"?: string;
-    "letter-height"?: string;
-    "letter-thickness"?: string;
+    "letter-height"?: number;
+    "letter-thickness"?: number;
     color?: string;
     anchor?: string;
     colors?: {
