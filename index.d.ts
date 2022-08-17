@@ -1,4 +1,4 @@
-import { Scene } from "@babylonjs/core";
+import { Scene, Mesh, Material } from "@babylonjs/core";
 
 export type MeshWriterOptions = { [key: string]: any }
 
@@ -30,4 +30,19 @@ export type WriterOptions = {
 
 export class Writer {
     constructor(text: string, options: WriterOptions);
+
+    getMesh(): Mesh;
+
+    getMaterial(): Material;
+
+//     getSPS
+//    getMesh
+//    getMaterial
+//    color                   # sets or gets color but no change to material
+//    alpha                   # sets or gets alpha but no change to material
+//    setColor                # set emissive color and change color value
+//    setAlpha                # change value and material
+//    overrideOpac            # change material but not value
+//    resetOpac               # sets material to current value
+//    dispose          
 }
