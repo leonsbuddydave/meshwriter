@@ -211,7 +211,8 @@ define(
           lettersOrigins         = meshesAndBoxes[2],sps,spsMesh;
       if(meshes.length){
         sps                      = new B.SolidParticleSystem("sps"+"test",scene, { 
-          enableMultiMaterial: true
+          enableMultiMaterial: true,
+          updatable: true
         } );
         meshes.forEach(function(mesh,ix){
           sps.addShape(mesh, 1, {positionFunction: makePositionParticle(lettersOrigins[ix])});
