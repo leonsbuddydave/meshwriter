@@ -2,7 +2,7 @@
   "name": "meshwriter",
   "version": "1.3.0",
   "description": "Generate text in BABYLON meshes",
-  "main": "./dist/meshwriter.js",
+  "main": "./dist/meshwriter.min.js",
   "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
