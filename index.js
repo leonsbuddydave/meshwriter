@@ -14,7 +14,7 @@
 // Note to developers:  Helvetica Neue Medium is assumed, by the code, to be present
 //                      Do NOT remove it during customization
 
-define(
+export default define(
   // >>>>>  STEP 1 <<<<<
   ['./fonts/hirukopro-book','./fonts/helveticaneue-medium','./fonts/comicsans-normal','./fonts/jura-demibold','./fonts/webgl-dings'],
   function(HPB,HNM,CSN,JUR,WGD){
