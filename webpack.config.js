@@ -3,11 +3,11 @@ const path = require('path');
 module.exports = {
   entry: './index.js',
   output: {
-    filename: 'meshwriter.js',
+    filename: (process.env.MIN === 'true') ? 'meshwriter.min.js' : 'meshwriter.js',
     path: path.resolve(__dirname, 'dist')
   },
   mode: 'production',
   optimization: {
-  	minimize: false
+  	minimize: (process.env.MIN === 'true')
   }
 };

@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build-min": "terser ./dist/meshwriter.js -m reserved=['MeshWriter'] --mangle-props regex=/^[xyw][Md][tia][nxh]/ --output ./dist/meshwriter.min.js"
+    "build-min": "MIN=true webpack"
   },
   "repository": {
     "type": "git",
