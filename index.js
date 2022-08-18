@@ -210,8 +210,9 @@ define(
       var meshes                 = meshesAndBoxes[0],
           lettersOrigins         = meshesAndBoxes[2],sps,spsMesh;
       if(meshes.length){
-        sps                      = new B.SolidParticleSystem("sps"+"test",scene, { enableMultiMaterial: true,
-          updatable: true } );
+        sps                      = new B.SolidParticleSystem("sps"+"test",scene, { 
+          enableMultiMaterial: true
+        } );
         meshes.forEach(function(mesh,ix){
           sps.addShape(mesh, 1, {positionFunction: makePositionParticle(lettersOrigins[ix])});
           mesh.dispose()
