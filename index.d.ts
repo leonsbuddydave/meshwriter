@@ -1,4 +1,4 @@
-import { Scene, Mesh, Material } from "@babylonjs/core";
+import { Scene, Mesh, Material, SolidParticleSystem } from "@babylonjs/core";
 
 export type MeshWriterOptions = { [key: string]: any }
 
@@ -35,7 +35,8 @@ export class Writer {
 
     getMaterial(): Material;
 
-//     getSPS
+    getSPS(): SolidParticleSystem;
+
 //    getMesh
 //    getMaterial
 //    color                   # sets or gets color but no change to material
