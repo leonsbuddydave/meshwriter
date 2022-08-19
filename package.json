@@ -6,8 +6,7 @@
   "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "build-min": "MIN=true webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
